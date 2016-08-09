@@ -2,8 +2,8 @@
   "name": "witty-weather",
   "version": "1.0.0",
   "scripts": {
-    "interactive": "node -e \"require('./src/createEngine')().interactive()\"",
-    "start-server": "node ./src/server.js",
+    "interactive": "./run-node.sh -e \"require('./src/createEngine')().interactive()\"",
+    "start-server": "./run-node.sh ./src/server.js",
     "start-webpack": "react-scripts start",
     "start": "npm run start-server & npm run start-webpack & wait"
   },

@@ -5,7 +5,7 @@ const express = require('express');
 // ------------------------------------------------------------
 // Manage Context
 
-let _store = {};
+const _store = {};
 
 function getContext(sessionId) {
   return _store[sessionId] || {};
@@ -26,7 +26,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/chat', (req, res) => {
-  let actions = [];
+  const actions = [];
   const cb = (action) => actions.push(action);
   const {text, sessionId} = req.query;
   const engine = createEngine(WIT_TOKEN, cb);

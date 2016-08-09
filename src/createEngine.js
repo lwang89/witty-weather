@@ -80,9 +80,10 @@ const withAPIError = (ctx, err) => {
 function wrapActions(actions, cb) {
   return mapObject(
     actions,
-    (f, k) => (...args) => {
+    (f, k) => function () {
+      const args = [].slice.call(arguments);
       cb({name: k, args})
-      return f(...args);
+      return f.apply(null, arguments);
     }
   );
 }
@@ -112,8 +113,11 @@ const actions = {
 // ------------------------------------------------------------
 // init
 
-function createEngine(accessToken = WIT_TOKEN, cb = noop) {
-  return new Wit({accessToken, actions: wrapActions(actions, cb)});
+function createEngine(accessToken, cb) {
+  return new Wit({
+    accessToken: WIT_TOKEN,
+    actions: wrapActions(actions, cb || noop)
+  });
 }
 
 module.exports = createEngine;
