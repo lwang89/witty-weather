@@ -24,6 +24,10 @@ body {
   cursor: pointer;
 }
 
+.WebApp-button:hover, .WebApp-button:focus {
+  box-shadow: 0 0 2px 1px lightgrey;
+}
+
 .WebApp-header {
   display: flex;
   flex-direction: column;
@@ -79,16 +83,6 @@ body {
   margin: 0 15px;
 }
 
-.WebApp-log-root {
-  padding: 15px;
-  overflow-y: auto;
-}
-
-.WebApp-wit-image-root {
-  justify-content: center;
-  align-items: center;
-}
-
 .WebApp-chat-list {
   box-sizing: border-box;
   padding: 10px;
@@ -137,8 +131,26 @@ body {
   font-size: 15px;
 }
 
+.WebApp-wit-image-root {
+  justify-content: center;
+  align-items: center;
+}
+
+.WebApp-wit-image-root:hover,
+.WebApp-wit-image-root:focus,
+.WebApp-wit-image-root:hover .WebApp-wit-image,
+.WebApp-wit-image-root:focus .WebApp-wit-image {
+  box-shadow: 0 0 2px 1px lightgrey;
+}
+
 .WebApp-wit-image {
   width: 50%;
+  border-radius: 100%;
+}
+
+.WebApp-log-root {
+  padding: 15px;
+  overflow-y: auto;
 }
 
 .WebApp-log-break {
