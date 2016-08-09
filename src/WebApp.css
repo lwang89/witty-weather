@@ -61,10 +61,6 @@ body {
   text-align: center
 }
 
-.WebApp-wit-image {
-  max-width: 100%;
-}
-
 .WebApp-arrow-right-to-left {
   background: url('./arrow-right-to-left.svg') right center no-repeat;
 }
@@ -81,6 +77,16 @@ body {
   flex: 1;
   border: 1px solid lightgrey;
   margin: 0 15px;
+}
+
+.WebApp-log-root {
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.WebApp-wit-image-root {
+  justify-content: center;
+  align-items: center;
 }
 
 .WebApp-chat-list {
@@ -131,9 +137,8 @@ body {
   font-size: 15px;
 }
 
-.WebApp-log-root {
-  padding: 15px;
-  overflow-y: auto;
+.WebApp-wit-image {
+  width: 50%;
 }
 
 .WebApp-log-break {

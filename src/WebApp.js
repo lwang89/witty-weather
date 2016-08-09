@@ -3,7 +3,7 @@ import {API_URL} from './config';
 import fetch from 'isomorphic-fetch';
 import React, {PropTypes} from 'react';
 import uuid from 'node-uuid';
-import witImage from './wit-app.png';
+import botSendsImage from './bot-sends.svg';
 
 // ------------------------------------------------------------
 // helpers
@@ -327,7 +327,7 @@ export default class WebApp extends React.Component {
               href="https://wit.ai/stopachka/wittyweather">
               <img
                 className="WebApp-wit-image"
-                src={witImage}
+                src={botSendsImage}
                 alt="See the stories"
               />
             </a>
