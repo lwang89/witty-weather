@@ -1,0 +1,9 @@
+{
+  "version" : 20160513,
+  "zip-command" : "zip wittyweather.zip wittyweather/app.json wittyweather/entities/*.json wittyweather/actions.json wittyweather/stories.json wittyweather/expressions.json",
+  "data" : {
+    "name" : "wittyweather",
+    "description" : "wittyweather's brain",
+    "lang" : "en"
+  }
+}

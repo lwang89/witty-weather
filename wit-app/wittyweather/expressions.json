@@ -1,0 +1,454 @@
+{
+  "data" : [
+    {
+      "text" : "Bla bla bla ",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"out_of_scope\""
+        }
+      ]
+    },
+    {
+      "text" : "Hello!",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"greeting\""
+        }
+      ]
+    },
+    {
+      "text" : "Hi",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"greeting\""
+        }
+      ]
+    },
+    {
+      "text" : "Hola",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"greeting\""
+        }
+      ]
+    },
+    {
+      "text" : "Howdy",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"greeting\""
+        }
+      ]
+    },
+    {
+      "text" : "I like bla blah",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"out_of_scope\""
+        }
+      ]
+    },
+    {
+      "text" : "I like sushi",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"out_of_scope\""
+        }
+      ]
+    },
+    {
+      "text" : "I want the weather",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        }
+      ]
+    },
+    {
+      "text" : "I want the weather in Paris instead",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"Paris\"",
+          "start" : 22,
+          "end" : 27
+        }
+      ]
+    },
+    {
+      "text" : "I want the weather in Toronto please",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"Toronto\"",
+          "start" : 22,
+          "end" : 29
+        }
+      ]
+    },
+    {
+      "text" : "I want the weather in Toronto!",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"Toronto\"",
+          "start" : 22,
+          "end" : 29
+        }
+      ]
+    },
+    {
+      "text" : "I want the weather in toronto",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"toronto\"",
+          "start" : 22,
+          "end" : 29
+        }
+      ]
+    },
+    {
+      "text" : "In San Francisco please",
+      "entities" : [
+        {
+          "entity" : "location",
+          "value" : "\"San Francisco\"",
+          "start" : 3,
+          "end" : 16
+        }
+      ]
+    },
+    {
+      "text" : "In Toronto",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"Toronto\"",
+          "start" : 3,
+          "end" : 10
+        }
+      ]
+    },
+    {
+      "text" : "In Toronto please",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"Toronto\"",
+          "start" : 3,
+          "end" : 10
+        }
+      ]
+    },
+    {
+      "text" : "Not telling you",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"out_of_scope\""
+        }
+      ]
+    },
+    {
+      "text" : "Paris",
+      "entities" : [
+        {
+          "entity" : "location",
+          "value" : "\"Paris\"",
+          "start" : 0,
+          "end" : 5
+        }
+      ]
+    },
+    {
+      "text" : "Thank you!",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"thank_you\""
+        }
+      ]
+    },
+    {
+      "text" : "Thanks!",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"thank_you\""
+        }
+      ]
+    },
+    {
+      "text" : "The weather in somewhere else?",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        }
+      ]
+    },
+    {
+      "text" : "What is the weather in Paris?",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"Paris\"",
+          "start" : 23,
+          "end" : 28
+        }
+      ]
+    },
+    {
+      "text" : "Where is the weather in San Francisco?",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"San Francisco\"",
+          "start" : 24,
+          "end" : 37
+        }
+      ]
+    },
+    {
+      "text" : "Why hello there!",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"greeting\""
+        }
+      ]
+    },
+    {
+      "text" : "asdasdsad",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"out_of_scope\""
+        }
+      ]
+    },
+    {
+      "text" : "blahdas dasd asdas ",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"out_of_scope\""
+        }
+      ]
+    },
+    {
+      "text" : "do you love me?",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"out_of_scope\""
+        }
+      ]
+    },
+    {
+      "text" : "hi, i want the weather in Toronto",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"Toronto\"",
+          "start" : 26,
+          "end" : 33
+        }
+      ]
+    },
+    {
+      "text" : "hi, i want the weather in paris",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"paris\"",
+          "start" : 26,
+          "end" : 31
+        }
+      ]
+    },
+    {
+      "text" : "hi, i want the weather in toronto",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"toronto\"",
+          "start" : 26,
+          "end" : 33
+        }
+      ]
+    },
+    {
+      "text" : "i like sushi",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"out_of_scope\""
+        }
+      ]
+    },
+    {
+      "text" : "in Blahsdsd"
+    },
+    {
+      "text" : "in Toronto",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"Toronto\"",
+          "start" : 3,
+          "end" : 10
+        }
+      ]
+    },
+    {
+      "text" : "in Toronto please!",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"Toronto\"",
+          "start" : 3,
+          "end" : 10
+        }
+      ]
+    },
+    {
+      "text" : "rome",
+      "entities" : [
+        {
+          "entity" : "location",
+          "value" : "\"rome\"",
+          "start" : 0,
+          "end" : 4
+        }
+      ]
+    },
+    {
+      "text" : "thanks man",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"thank_you\""
+        }
+      ]
+    },
+    {
+      "text" : "thx",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"thank_you\""
+        }
+      ]
+    },
+    {
+      "text" : "what is the weather in new york?",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"new york\"",
+          "start" : 23,
+          "end" : 31
+        }
+      ]
+    },
+    {
+      "text" : "what's the weather in San Francisco?",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"San Francisco\"",
+          "start" : 22,
+          "end" : 35
+        }
+      ]
+    },
+    {
+      "text" : "yo",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"greeting\""
+        }
+      ]
+    },
+    {
+      "text" : "yo!",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"greeting\""
+        }
+      ]
+    }
+  ]
+}

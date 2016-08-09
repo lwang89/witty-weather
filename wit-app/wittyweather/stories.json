@@ -1,0 +1,182 @@
+{
+  "data" : [
+    {
+      "name" : "weather",
+      "turns" : [
+        {
+          "user" : "I want the weather",
+          "entities" : [
+            {
+              "entity" : "intent",
+              "value" : "\"weather\""
+            }
+          ],
+          "operations" : [
+            {
+              "bookmark" : "where?"
+            },
+            {
+              "action" : "template-Where do you want the weather?"
+            }
+          ]
+        },
+        {
+          "user" : "In San Francisco please",
+          "entities" : [
+            {
+              "entity" : "location",
+              "value" : "\"San Francisco\"",
+              "start" : 3,
+              "end" : 16
+            }
+          ],
+          "operations" : [
+            {
+              "bookmark" : "fetch-weather"
+            },
+            {
+              "action" : "function-fetchWeather"
+            },
+            {
+              "branches" : [
+                {
+                  "predicates" : [
+                    {
+                      "name" : "forecast",
+                      "negative" : false
+                    }
+                  ],
+                  "operations" : [
+                    {
+                      "action" : "template-The weather in {location} is {forecast}"
+                    }
+                  ]
+                },
+                {
+                  "predicates" : [
+                    {
+                      "name" : "missingLocation",
+                      "negative" : false
+                    }
+                  ],
+                  "operations" : [
+                    {
+                      "action" : "template-I'm sorry, but I couldn't figure out what city you wanted. Let's try again..."
+                    },
+                    {
+                      "jump" : "where?"
+                    }
+                  ]
+                },
+                {
+                  "predicates" : [
+                    {
+                      "name" : "apiError",
+                      "negative" : false
+                    }
+                  ],
+                  "operations" : [
+                    {
+                      "action" : "template-Sorry, I don't understand everything yet! Could you can ask me for the weather please?"
+                    },
+                    {
+                      "jump" : "where?"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "outOfScope",
+      "turns" : [
+        {
+          "user" : "Bla bla bla ",
+          "entities" : [
+            {
+              "entity" : "intent",
+              "value" : "\"out_of_scope\""
+            }
+          ],
+          "operations" : [
+            {
+              "action" : "template-Sorry, I don't understand everything yet! Could you can ask me for the weather please?"
+            },
+            {
+              "jump" : "where?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "greeting",
+      "turns" : [
+        {
+          "user" : "Hi",
+          "entities" : [
+            {
+              "entity" : "intent",
+              "value" : "\"greeting\""
+            }
+          ],
+          "operations" : [
+            {
+              "action" : "template-Hi there!"
+            },
+            {
+              "jump" : "where?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "weatherOneGo",
+      "turns" : [
+        {
+          "user" : "What is the weather in Paris?",
+          "entities" : [
+            {
+              "entity" : "intent",
+              "value" : "\"weather\""
+            },
+            {
+              "entity" : "location",
+              "value" : "\"Paris\"",
+              "start" : 23,
+              "end" : 28
+            }
+          ],
+          "operations" : [
+            {
+              "jump" : "fetch-weather"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "thanks",
+      "turns" : [
+        {
+          "user" : "Thank you!",
+          "entities" : [
+            {
+              "entity" : "intent",
+              "value" : "\"thank_you\""
+            }
+          ],
+          "operations" : [
+            {
+              "action" : "template-No problem :)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

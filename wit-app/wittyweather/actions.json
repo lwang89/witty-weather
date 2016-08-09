@@ -1,0 +1,59 @@
+{
+  "data" : [
+    {
+      "id" : "function-fetchWeather",
+      "type" : "function",
+      "name" : "fetchWeather"
+    },
+    {
+      "id" : "template-Hi there!",
+      "type" : "template",
+      "template" : "Hi there!"
+    },
+    {
+      "id" : "template-Hm, This is quite a wacky question...",
+      "type" : "template",
+      "template" : "Hm, This is quite a wacky question..."
+    },
+    {
+      "id" : "template-I'm sorry, but I couldn't figure out what city you wanted. Let's try again...",
+      "type" : "template",
+      "template" : "I'm sorry, but I couldn't figure out what city you wanted. Let's try again..."
+    },
+    {
+      "id" : "template-No problem :)",
+      "type" : "template",
+      "template" : "No problem :)"
+    },
+    {
+      "id" : "template-Oh no, my weather servers are down. Let's try again!",
+      "type" : "template",
+      "template" : "Oh no, my weather servers are down. Let's try again!"
+    },
+    {
+      "id" : "template-Sorry, I don't understand everything yet! Could you can ask me for the weather please?",
+      "type" : "template",
+      "template" : "Sorry, I don't understand everything yet! Could you can ask me for the weather please?"
+    },
+    {
+      "id" : "template-The weather in {location} is {forecast}",
+      "type" : "template",
+      "template" : "The weather in {location} is {forecast}",
+      "requirements" : [
+        {
+          "name" : "forecast",
+          "negative" : false
+        },
+        {
+          "name" : "location",
+          "negative" : false
+        }
+      ]
+    },
+    {
+      "id" : "template-Where do you want the weather?",
+      "type" : "template",
+      "template" : "Where do you want the weather?"
+    }
+  ]
+}

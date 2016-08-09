@@ -1,0 +1,22 @@
+{
+  "name": "witty-weather",
+  "version": "1.0.0",
+  "scripts": {
+    "interactive": "node -e \"require('./src/createEngine')().interactive()\"",
+    "start-server": "node ./src/server.js",
+    "start-webpack": "react-scripts start",
+    "start": "npm run start-server & npm run start-webpack & wait"
+  },
+  "author": "wit",
+  "dependencies": {
+    "express": "^4.14.0",
+    "isomorphic-fetch": "^2.2.1",
+    "node-uuid": "^1.4.7",
+    "node-wit": "^4.0.0",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  },
+  "devDependencies": {
+    "react-scripts": "^0.2.1"
+  }
+}
