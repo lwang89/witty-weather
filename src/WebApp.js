@@ -179,7 +179,7 @@ class Chat extends React.Component {
           <input
             ref={x => {this._input = x}}
             className="WebApp-chat-composer"
-            placeholder="Chat with your bot here..."
+            placeholder="Chat with your bot here... (or /reset to reset the Bot)"
             onChange={onInputChange}
             onKeyDown={onInputKeyDown}
             value={inputValue}
@@ -343,7 +343,13 @@ export default class WebApp extends React.Component {
     if (e.key === 'Enter') {
       const {inputValue, sessionId} = this.state;
       e.preventDefault();
-      this._sendText(inputValue.trim(), sessionId);
+      if (inputValue.trim()=='/reset') {
+        //reset
+        console.log('reset');
+        this.setState({messages : [],sessionId: uuid.v4()});
+      } else {
+        this._sendText(inputValue.trim(), sessionId);
+      }
       this.setState({inputValue: ''});
     }
   }
