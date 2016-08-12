@@ -179,11 +179,14 @@ class Chat extends React.Component {
           <input
             ref={x => {this._input = x}}
             className="WebApp-chat-composer"
-            placeholder="Chat with your bot here... (or /reset to reset the Bot)"
+            placeholder="Chat with your bot here..."
             onChange={onInputChange}
             onKeyDown={onInputKeyDown}
             value={inputValue}
           />
+          <div className="WebApp-chat-composer-info">
+            * Send <strong>/reset</strong> to start fresh
+          </div>
         </div>
       </div>
     );
@@ -284,15 +287,17 @@ class Arrows extends React.Component {
   }
 }
 
+const emptyState = () => ({
+  inputValue: '',
+  messages: [],
+  sessionId: uuid.v4(),
+  hasError: false,
+});
+
 export default class WebApp extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      inputValue: '',
-      messages: [],
-      sessionId: uuid.v4(),
-      hasError: false,
-    };
+    this.state = emptyState();
   }
   render() {
     const {inputValue, messages, hasError} = this.state;
@@ -340,17 +345,13 @@ export default class WebApp extends React.Component {
     this.setState({inputValue: e.target.value});
   }
   _onInputKeyDown = (e) => {
-    if (e.key === 'Enter') {
-      const {inputValue, sessionId} = this.state;
-      e.preventDefault();
-      if (inputValue.trim()=='/reset') {
-        //reset
-        console.log('reset');
-        this.setState({messages : [],sessionId: uuid.v4()});
-      } else {
-        this._sendText(inputValue.trim(), sessionId);
-      }
+    const value = this.state.inputValue.trim();
+    if (e.key !== 'Enter') return;
+    if (value === '/reset') {
+      this.setState(emptyState());
+    } else {
       this.setState({inputValue: ''});
+      this._sendText(value, this.state.sessionId);
     }
   }
   _sendText = (userText, sessionId) => {

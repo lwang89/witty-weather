@@ -136,6 +136,14 @@ body {
   align-items: center;
 }
 
+.WebApp-chat-composer-info {
+  border-top: 1px solid lightgrey;
+  color: grey;
+  font-size: 13px;
+  padding: 5px;
+  background: #f9f8f8;
+}
+
 .WebApp-wit-image-root:hover,
 .WebApp-wit-image-root:focus,
 .WebApp-wit-image-root:hover .WebApp-wit-image,
