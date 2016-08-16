@@ -31,6 +31,11 @@
       "template" : "Oh no, my weather servers are down. Let's try again!"
     },
     {
+      "id" : "template-Okay :)",
+      "type" : "template",
+      "template" : "Okay :)"
+    },
+    {
       "id" : "template-Sorry, I don't understand everything yet! Could you can ask me for the weather please?",
       "type" : "template",
       "template" : "Sorry, I don't understand everything yet! Could you can ask me for the weather please?"

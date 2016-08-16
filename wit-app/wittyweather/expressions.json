@@ -133,6 +133,28 @@
       ]
     },
     {
+      "text" : "In SF",
+      "entities" : [
+        {
+          "entity" : "location",
+          "value" : "\"SF\"",
+          "start" : 3,
+          "end" : 5
+        }
+      ]
+    },
+    {
+      "text" : "In SF!",
+      "entities" : [
+        {
+          "entity" : "location",
+          "value" : "\"SF\"",
+          "start" : 3,
+          "end" : 5
+        }
+      ]
+    },
+    {
       "text" : "In San Francisco please",
       "entities" : [
         {
@@ -194,6 +216,17 @@
       ]
     },
     {
+      "text" : "SF",
+      "entities" : [
+        {
+          "entity" : "location",
+          "value" : "\"SF\"",
+          "start" : 0,
+          "end" : 2
+        }
+      ]
+    },
+    {
       "text" : "Thank you!",
       "entities" : [
         {
@@ -236,6 +269,21 @@
       ]
     },
     {
+      "text" : "What's the weather in Paris",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"Paris\"",
+          "start" : 22,
+          "end" : 27
+        }
+      ]
+    },
+    {
       "text" : "Where is the weather in San Francisco?",
       "entities" : [
         {
@@ -260,7 +308,27 @@
       ]
     },
     {
+      "text" : "and in Rome?",
+      "entities" : [
+        {
+          "entity" : "location",
+          "value" : "\"Rome\"",
+          "start" : 7,
+          "end" : 11
+        }
+      ]
+    },
+    {
       "text" : "asdasdsad",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"out_of_scope\""
+        }
+      ]
+    },
+    {
+      "text" : "blah blah",
       "entities" : [
         {
           "entity" : "intent",
@@ -278,11 +346,56 @@
       ]
     },
     {
+      "text" : "chacal ",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"out_of_scope\""
+        }
+      ]
+    },
+    {
       "text" : "do you love me?",
       "entities" : [
         {
           "entity" : "intent",
           "value" : "\"out_of_scope\""
+        }
+      ]
+    },
+    {
+      "text" : "dude",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"out_of_scope\""
+        }
+      ]
+    },
+    {
+      "text" : "great, thanks!",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"thank_you\""
+        }
+      ]
+    },
+    {
+      "text" : "hhi",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"greeting\""
+        }
+      ]
+    },
+    {
+      "text" : "hi there!",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"greeting\""
         }
       ]
     },
@@ -344,6 +457,28 @@
       "text" : "in Blahsdsd"
     },
     {
+      "text" : "in Paris!",
+      "entities" : [
+        {
+          "entity" : "location",
+          "value" : "\"Paris\"",
+          "start" : 3,
+          "end" : 8
+        }
+      ]
+    },
+    {
+      "text" : "in SF",
+      "entities" : [
+        {
+          "entity" : "location",
+          "value" : "\"SF\"",
+          "start" : 3,
+          "end" : 5
+        }
+      ]
+    },
+    {
       "text" : "in Toronto",
       "entities" : [
         {
@@ -370,6 +505,15 @@
           "value" : "\"Toronto\"",
           "start" : 3,
           "end" : 10
+        }
+      ]
+    },
+    {
+      "text" : "in your mom",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"out_of_scope\""
         }
       ]
     },
@@ -403,6 +547,17 @@
       ]
     },
     {
+      "text" : "what about NY",
+      "entities" : [
+        {
+          "entity" : "location",
+          "value" : "\"NY\"",
+          "start" : 11,
+          "end" : 13
+        }
+      ]
+    },
+    {
       "text" : "what is the weather in new york?",
       "entities" : [
         {
@@ -418,6 +573,30 @@
       ]
     },
     {
+      "text" : "what's the weather",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        }
+      ]
+    },
+    {
+      "text" : "what's the weather in SF",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"weather\""
+        },
+        {
+          "entity" : "location",
+          "value" : "\"SF\"",
+          "start" : 22,
+          "end" : 24
+        }
+      ]
+    },
+    {
       "text" : "what's the weather in San Francisco?",
       "entities" : [
         {
@@ -429,6 +608,15 @@
           "value" : "\"San Francisco\"",
           "start" : 22,
           "end" : 35
+        }
+      ]
+    },
+    {
+      "text" : "what's your mom",
+      "entities" : [
+        {
+          "entity" : "intent",
+          "value" : "\"out_of_scope\""
         }
       ]
     },
