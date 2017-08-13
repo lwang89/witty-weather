@@ -1,9 +1,4 @@
-# witty-weather
-
-
-# NOTE: witty-weather is deprecated
-
----- 
+# witty-weather (deprecated)
 
 This project is currently deprecated. [witty-fiddle](https://wit-ai.github.io/witty-fiddle) is the successor. You no longer need to run the project locally.
 
